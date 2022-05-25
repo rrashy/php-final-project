@@ -43,15 +43,16 @@ verificacao('login.php');
     </nav>
 
     </div>
-    <div class="row" style="padding-left: 32%;">
-        <div class="col s12 m7">
+    <div class="row" style="padding-left: 14%; padding-top:2%;">
+        <div class="col s12 m10">
             <div class="card">
+            
                 <div class="card-image">
                     <img src="../img/parra.jpg">
                     <span class="card-title">Minha conta</span>
                 </div>
                 <div class="card-content">
-                    <h4>Em construção</h4>
+                    
                     <?php
 
                     if(isset($_SESSION['msg']) &&
