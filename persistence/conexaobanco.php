@@ -10,7 +10,7 @@ class ConexaoBanco extends PDO
     public static function getInstance(){
         if(!isset(self::$instance)){
             try{
-                self::$instance = new ConexaoBanco("mysql:host=localhost;dbname=loja;","root","");
+                self::$instance = new ConexaoBanco("mysql:dbname=loja;host=localhost:3306;","root","");
             }
                 catch (Exception $e){
                     echo 'Erro ao conectar com o Banco'.$e;
